@@ -4,6 +4,7 @@ import {environment as dev } from './environment.dev'
 
 const config = {
     // Add common config values here
+    // both strings, e.g. 'color': 'green',
 }
 
 const configEnv = process.env.NODE_ENV === 'production'
