@@ -3,7 +3,8 @@
 pages:
   stage: deploy
   script:
-  - yarn build
+  - rm -r public
+  - cp -r build public
   artifacts:
     paths:
     - public
