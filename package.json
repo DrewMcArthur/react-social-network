@@ -15,7 +15,8 @@
     "eject": "react-scripts-ts eject",
     "deploy:firebase": "npm run build && firebase deploy",
     "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "prepare": "npm run snyk-protect",
+    "deploy": "gh-pages -nd build; git push github master"
   },
   "author": "Amir Movahedi",
   "license": "MIT",
@@ -93,6 +94,7 @@
     "@types/react-tap-event-plugin": "0.0.30",
     "@types/redux-logger": "^3.0.4",
     "@types/uuid": "^3.4.3",
+    "gh-pages": "^1.2.0",
     "react-scripts-ts": "^2.14.0",
     "redux-devtools": "^3.4.1",
     "redux-devtools-dock-monitor": "^1.1.3",
